@@ -24,15 +24,15 @@
 In order to develop OpenWhisk CLI on your local machine. First, install the prerequisites to
 download and build OpenWhisk CLI: [installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-Then, save the project in the location compliant with the Go standard naming convention, which means you need to
-created a directory named $GOPATH/src/github.com/apache/ and download the source code via the following commands:
+Then, save the project in the location compliant with Go standard naming convention, which means you need to
+create a directory named $GOPATH/src/github.com/apache/ and download the source code via the following commands:
 
 ```
 $ cd $GOPATH/src/github.com/apache/
 $ git clone https://github.com/apache/openwhisk-cli.git
 ```
 
-After cloning the source code, you need to install all the dependencies by running the command under openwhisk cli folder:
+After cloning the source code, you will need to install all the dependencies by running a command under openwhisk cli folder:
 
 ```
 $ go get -d -t ./...
@@ -44,7 +44,7 @@ or
 $ make deps
 ```
 
-You should be able to build the binaries with either the go command, or the Gradle command, which is available in [README](https://github.com/apache/openwhisk-cli/blob/master/README.md).
+You should be able to build the binaries with either go command, or the Gradle command, which is available in [README](https://github.com/apache/openwhisk-cli/blob/master/README.md).
 
 
 ## Proposing new features
@@ -83,7 +83,7 @@ Use idomatic go. Document exported functions.
 
 # Publishing Tagged Release to Homebrew
 
- [Homebrew](https://brew.sh) is used to install `wsk` locally. Once we release a new version of `wsk` we should update its version in Homebrew.
+ [Homebrew](https://brew.sh) is used to install `wsk` locally. Once we release a new version of `wsk` we will update its version in Homebrew.
 
  Get the new release SHA256 checksum by downloading the Source Code (tar.gz) from the [releases page](https://github.com/apache/openwhisk-cli/releases) and running `shasum -a 256 X.Y.Z.tar.gz` on the tarball.
 
